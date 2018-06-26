@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 let url; 
 let input; 
@@ -9,11 +10,19 @@ $('#submitButton').click(function () {
 
 function searchRepositories(searchTerms){
   $.ajax ({
+=======
+$(document).ready(function (){
+});
+
+function searchRepositories(){
+$.ajax ({
+>>>>>>> 2b5927c7f62cbc9cc0792f0aaf5a9edbdc981956
   url:"https://api.github.com/search/code?q=addClass+user:mozilla",
   dataType:'json',
   data:{
     api_key:'7070cfa74c365a226d3643f825b8bf3bd30fc16b',
     q: input,
+<<<<<<< HEAD
     },
     success: resp => { //on success, I want to create a response that is an object that has a key called url
     //  console.log(resp);
@@ -33,3 +42,10 @@ function searchRepositories(searchTerms){
 
   });
 }
+=======
+  }
+  }
+  );
+}
+
+>>>>>>> 2b5927c7f62cbc9cc0792f0aaf5a9edbdc981956
